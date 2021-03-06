@@ -10,9 +10,10 @@ import { LinearGradient } from 'expo-linear-gradient';
 // from constants
 
 import { COLORS, FONTS, icons, images, SIZES } from '../constants'
+// import { NavigationContainer } from '@react-navigation/native';
 // import { Image } from 'react-native-ui-lib/generatedTypes/components/image';
 
-const SignUpScreen = () => {
+const SignUpScreen = ({navigation}) => {
 
 
     // using usestate
@@ -292,7 +293,7 @@ useEffect(() => {
                     alignItems : 'center',
                     justifyContent : 'center'
                 }}
-                onPress = {() => console.log('Navigate to he Home')}
+                onPress = {() => navigation.navigate('Home')}
                 >
                     <Text style = {{
                         color : COLORS.lightGreen ,

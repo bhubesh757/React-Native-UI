@@ -19,10 +19,10 @@ export class App extends Component {
     return (
       <NavigationContainer>
         <Stack.Navigator screenOptions = {{headerShown : false}} 
-        initialRouteName = {SignUpScreen}
+        initialRouteName = {Tabs}
         >
         <Stack.Screen name = 'SignUp' component = {SignUpScreen}></Stack.Screen>
-        <Stack.Screen name = 'tabs' component = {Tabs}></Stack.Screen>
+        <Stack.Screen name = 'Home' component = {Tabs}></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     )
